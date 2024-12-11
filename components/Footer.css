@@ -1,0 +1,124 @@
+/* Estilos generales para el contenido */
+body {
+  min-height: 100vh; /* altura de la pantalla */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Hace que el contenido principal ocupe el espacio disponible */
+}
+
+/* Fondo oscuro con efectos visuales */
+.footer-wrapper {
+  background: linear-gradient(135deg, #ff4081, #6200ea);
+  color: #fff;
+  padding: 50px 20px;
+  animation: fadeInUp 1s ease-out;
+  margin-top: 100px; /* Ajusta el margen superior para mover el footer más abajo */
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Estilo para cada sección */
+.footer-section {
+  flex: 1;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.footer-about {
+  text-align: left;
+}
+
+.footer-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer-description {
+  font-size: 1.2rem;
+  color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Estilo para los enlaces rápidos */
+.footer-subtitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: #f4f4f4;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffeb3b;
+  transform: translateX(5px);
+}
+
+/* Estilo para los íconos sociales */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: #f4f4f4;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ffeb3b;
+  transform: scale(1.2);
+}
+
+/* Estilo para la parte inferior del footer */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* Hover y transiciones para los enlaces y las redes sociales */
+.footer-link:hover, .social-icon:hover {
+  color: #ffeb3b;
+  transform: scale(1.1);
+}

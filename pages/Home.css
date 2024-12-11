@@ -1,0 +1,88 @@
+/* Estilo para el contenedor principal */
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff4081, #6200ea);
+  animation: fadeInUp 1s ease-out;
+  padding: 20px;
+}
+
+/* Efecto de animación al cargar */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilo para el contenedor de la caja de texto */
+.home-content-wrapper {
+  background: rgb(248, 194, 255); /* Fondo semitransparente */
+  border-radius: 15px;
+  padding: 30px 50px;
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.home-content-wrapper:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgb(250, 159, 159);
+}
+
+/* Título principal */
+.home-title {
+  font-size: 2.5rem;
+  color: #6200ea;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+/* Descripción de la sección */
+.home-description {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Estilo para el botón */
+.explore-btn {
+  background: #ff4081;
+  color: rgb(233, 233, 233);
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Agregamos una sombra suave */
+}
+
+/* Efecto dinámico al pasar el cursor */
+.explore-btn:hover {
+  background: #6200ea;
+  transform: translateY(-5px) scale(1.1); /* Animación de escala y desplazamiento */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Sombra más prominente */
+  filter: brightness(1.2); /*botón brillante*/
+}
+
+/* Asegurarse de que el botón esté centrado */
+.explore-section {
+  margin-top: 20px;
+}
+
+/* Fondo de la página y espaciado */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}

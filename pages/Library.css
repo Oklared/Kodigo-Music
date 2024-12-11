@@ -1,0 +1,167 @@
+/* Contenedor para la lista de canciones */
+.music-library-section {
+  background-color: #f01dc2e7;
+  padding: 30px;
+  min-height: 100vh; /* Asegura que la sección tenga al menos la altura de la pantalla */
+}
+
+.music-library-content {
+  max-width: 1000px; /* Aumentamos el tamaño de la caja para que no quede tan pequeña */
+  margin: 5rem auto; /* Centrado automático */
+  background-color: #da3ea6;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para darle un toque más moderno */
+  transition: box-shadow 0.3s ease-in-out; /* Transición suave en el brillo */
+}
+
+/* Efecto de brillo en el contenedor */
+.music-library-content:hover {
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.8); /* Añade un brillo rosa al pasar el mouse */
+  border: 2px solid #ff4081; /* Borde luminoso */
+}
+
+/* Título de la librería */
+.library-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Estilo del buscador */
+.search-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 80%; /* Más espacio para el campo de búsqueda */
+  padding: 12px;
+  font-size: 1rem;
+  border: 3px solid #ddd;
+  border-radius: 5px;
+  transition: border 0.3s ease, box-shadow 0.3s ease; /* Transición del borde y sombra */
+}
+
+.search-input:focus {
+  border: 2px solid #6200ea;
+  box-shadow: 0 0 10px rgba(98, 0, 234, 0.8); /* Brillo cuando está en foco */
+}
+
+/* Estilos para los botones de "Play" y "Remove" */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centralizacion de los botones */
+  gap: 25px; /* Espacio entre los botones */
+  margin-top: 20px;
+}
+
+/* Estilo para el botón de reproducción */
+.play-button {
+  background-color: #6200ea;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  font-size: 1rem;
+}
+
+.play-button:hover {
+  background-color: #ff4081;
+  box-shadow: 0 0 10px rgba(255, 64, 129, 0.8); /* Efecto de brillo al pasar el mouse */
+}
+
+/* Estilo para el botón de eliminar */
+.remove-button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  font-size: 1rem;
+}
+
+.remove-button:hover {
+  background-color: #c0392b;
+  box-shadow: 0 0 10px rgba(192, 57, 43, 0.8); /* Brillo al pasar el mouse */
+}
+
+/* Estilo para el formulario de agregar canción */
+.add-song-form {
+  display: flex;
+  gap: 15px;
+  justify-content: center; /* Centramos los campos */
+  margin-bottom: 30px;
+}
+
+.add-song-form input {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #780ad8;
+  width: 220px; /* Más grande para mejorar la interacción */
+}
+
+.add-song-btn {
+  background-color: #6200ea;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  font-size: 1rem;
+}
+
+.add-song-btn:hover {
+  background-color: #ff4081;
+  box-shadow: 0 0 10px rgba(255, 64, 129, 0.8); /* Brillo en el hover */
+}
+
+/* Estilo para la lista de canciones */
+.song-item {
+  background-color: #a015fc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(241, 241, 241, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto de brillo y aumento al pasar el mouse sobre cada canción */
+.song-item:hover {
+  transform: scale(1.02); /* Le da un efecto de aumento al pasar el mouse */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15), 0 0 15px rgba(255, 105, 180, 0.8); /* Añade un brillo a la sombra */
+}
+
+/* Detalles de la canción */
+.song-details {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.song-title {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.song-artist {
+  color: #bbb;
+  font-style: italic;
+}
+
+/* Alineación y espaciado en la lista de canciones */
+.song-list {
+  padding-left: 0;
+}
+
+.song-item {
+  display: flex;
+  justify-content: space-between; /* Ordenamiento de los elementos dentro de cada canción */
+  align-items: center;
+}
